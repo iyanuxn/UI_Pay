@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <div className="w-screen h-screen overflow-hidden 2xl:container 2xl:mx-auto flex md:flex-row flex-col items-center">
+    <div className="w-screen h-screen overflow-auto md:overflow-hidden 2xl:container 2xl:mx-auto flex md:flex-row flex-col items-center">
       {/* LHS */}
       <div className="md:w-1/2 w-full p-5 md:p-20 flex flex-col md:justify-center gap-10 h-full">
         {/* logo */}
@@ -42,46 +42,46 @@ const App = () => {
       </div>
       {/* RHS */}
       {getStarted ? (
-        <div className="md:w-1/2 w-full p-20 flex flex-col gap-5 h-full justify-center overflow-x-auto">
+        <div className="md:w-1/2 w-full p-5 md:p-20 flex flex-col gap-5 h-full justify-center md:overflow-x-auto">
           {/* card */}
-          <div className="flex justify-between items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
+          <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
-              <img src={UI_Logo} alt="UI Logo" className="w-14" />
-              <span className="font-medium">ITEMS Pay</span>
+              <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
+              <span className="md:text-base text-sm font-medium">ITEMS Pay</span>
             </div>
-            <button className="h-10 border border-black px-8 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
             </button>
           </div>
           {/* card */}
-          <div className="flex justify-between items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
+          <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
-              <img src={UI_Logo} alt="UI Logo" className="w-14" />
-              <span className="font-medium">Maintenance Payments</span>
+              <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
+              <span className="md:text-base text-sm font-medium">Maintenance Payments</span>
             </div>
-            <button className="h-10 border border-black px-8 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
             </button>
           </div>
           {/* card */}
-          <div className="flex justify-between items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
+          <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
-              <img src={UI_Logo} alt="UI Logo" className="w-14" />
-              <span className="font-medium">
+              <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
+              <span className="md:text-base text-sm font-medium">
                 Hospital and Clinical Payments
               </span>
             </div>
-            <button className="h-10 border border-black px-8 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
             </button>
           </div>
           {/* card */}
-          <div className="flex justify-between items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
+          <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
-              <img src={UI_Logo} alt="UI Logo" className="w-14" />
-              <span className="font-medium">Faculty Funds Pay</span>
+              <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
+              <span className="md:text-base text-sm font-medium">Faculty Funds Pay</span>
             </div>
-            <button className="h-10 border border-black px-8 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
             </button>
           </div>
