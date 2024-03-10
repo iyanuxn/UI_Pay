@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import UI_Logo from "./assets/ui_logo.svg";
-import person1 from "./assets/person1.png";
-import person2 from "./assets/person2.png";
-import person3 from "./assets/person3.png";
+import { Link } from "react-router-dom";
+import UI_Logo from "../assets/ui_logo.svg";
+import person1 from "../assets/person1.png";
+import person2 from "../assets/person2.png";
+import person3 from "../assets/person3.png";
 
 const App = () => {
   const [getStarted, setGetStarted] = useState(false);
@@ -47,21 +48,28 @@ const App = () => {
           <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
               <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
-              <span className="md:text-base text-sm font-medium">ITEMS Pay</span>
+              <span className="md:text-base text-sm font-medium">
+                ITEMS Pay
+              </span>
             </div>
-            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <Link
+              to="/itemsPay"
+              className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out"
+            >
               View
-            </button>
+            </Link>
           </div>
           {/* card */}
           <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
               <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
-              <span className="md:text-base text-sm font-medium">Maintenance Payments</span>
+              <span className="md:text-base text-sm font-medium">
+                Maintenance Payments
+              </span>
             </div>
-            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <Link className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
-            </button>
+            </Link>
           </div>
           {/* card */}
           <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
@@ -71,19 +79,21 @@ const App = () => {
                 Hospital and Clinical Payments
               </span>
             </div>
-            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <Link className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
-            </button>
+            </Link>
           </div>
           {/* card */}
           <div className="flex justify-between gap-3 items-center w-full shadow-lg px-5 py-7 rounded-xl border border-neutral-100">
             <div className="flex items-center gap-2">
               <img src={UI_Logo} alt="UI Logo" className="md:w-14 w-10" />
-              <span className="md:text-base text-sm font-medium">Faculty Funds Pay</span>
+              <span className="md:text-base text-sm font-medium">
+                Faculty Funds Pay
+              </span>
             </div>
-            <button className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
+            <Link className="md:h-10 h-8 border border-black md:px-8 px-4 flex justify-center items-center rounded-xl hover:bg-black hover:text-white transition-all duration-200 ease-in-out">
               View
-            </button>
+            </Link>
           </div>
         </div>
       ) : (
